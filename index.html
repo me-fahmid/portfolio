@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Fahmid Hasan Sunny - Full Stack Developer & AI Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+     <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>Sunny</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1 class="name">Md Fahmid Hasan Sunny</h1>
+                    <div class="typing-text">
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="description">
+                        6th-semester Software Engineering student at Daffodil International University, 
+                        passionate about building innovative solutions and mentoring aspiring developers.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn">View Portfolio</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#" class="btn btn-outline" id="downloadResume">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-text">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-text">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="image-frame">
+                        <img src="assets/images/profile-pic.jpeg" alt="Md Fahmid Hasan Sunny" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>Passionate about creating innovative solutions through code and helping others grow in their tech journey</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>My Journey</h3>
+                    <p>
+                        I'm a passionate software engineering student in my 6th semester at Daffodil International University, 
+                        specializing in Full Stack Web Development, AI & Machine Learning, and Data Analytics.
+                    </p>
+                    <p>
+                        Currently working part-time as an Information Technology Manager at Pustak Prokashon. 
+                        I've gained valuable experience in managing technology infrastructure and implementing digital solutions. 
+                        This role has enhanced my project management and technical leadership skills.
+                    </p>
+                    <p>
+                        Beyond coding, I'm passionate about mentoring aspiring developers and helping them build their portfolios, 
+                        manage their GitHub projects, and navigate their career paths in software engineering and AI. 
+                        I believe in continuous learning and sharing knowledge with the community.
+                    </p>
+                    <p>
+                        My goal is to leverage technology to create innovative solutions that make a positive impact 
+                        while helping others grow in their tech careers.
+                    </p>
+                </div>
+                <div class="education-experience" data-aos="fade-left">
+                    <h3><i class="fas fa-graduation-cap"></i> Education & Experience</h3>
+                    <div class="edu-exp-item">
+                        <h4>Software Engineering</h4>
+                        <p class="institution"><i class="fas fa-university"></i> Daffodil International University</p>
+                        <p class="duration"><i class="far fa-calendar-alt"></i> 6th Semester · Expected Graduation: Dec 2027</p>
+                    </div>
+                    <div class="edu-exp-item">
+                        <h4>Information Technology Manager</h4>
+                        <p class="institution"><i class="fas fa-briefcase"></i> Pustak Prokashon</p>
+                        <p class="duration"><i class="far fa-calendar-alt"></i> Part-time Position</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+                <p>A comprehensive toolkit for building full-stack applications with AI integration</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">C</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express</div>
+                        <div class="skill-item">Tailwind CSS</div>
+                        <div class="skill-item">Bootstrap</div>
+                        <div class="skill-item">jQuery</div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Mongoose</div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-brain"></i> AI & Data Science</h3>
+                    <div class="skill-items">
+                        <div class="skill-item highlight">Pandas</div>
+                        <div class="skill-item">NumPy</div>
+                        <div class="skill-item">Matplotlib</div>
+                        <div class="skill-item">Seaborn</div>
+                        <div class="skill-item">Deep Learning</div>
+                        <div class="skill-item">CNN</div>
+                        <div class="skill-item">RNN</div>
+                        <div class="skill-item">LSTM</div>
+                        <div class="skill-item">Transformers</div>
+                        <div class="skill-item">NLP</div>
+                        <div class="skill-item">Generative AI</div>
+                        <div class="skill-item">ML Ops</div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-chart-line"></i> Key Skills Progress</h3>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Python & AI</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Full Stack Development</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Analytics</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-user-tie"></i> Professional Skills</h3>
+                    <div class="professional-skills">
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>GitHub Management</span>
+                        </div>
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>LinkedIn Management</span>
+                        </div>
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Project Documentation</span>
+                        </div>
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Time Management</span>
+                        </div>
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mentorship & Teaching</span>
+                        </div>
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="professional-skill">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Services</h2>
+                <p>Comprehensive solutions for your web development, AI, and data analytics needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full Stack Web Development</h3>
+                    <p>Complete web application development from frontend to backend, including database design and deployment. Building responsive, scalable, and modern web solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Frontend Development (React, Angular, JavaScript)</li>
+                        <li><i class="fas fa-check"></i> Backend Development (Node.js, Express, PHP)</li>
+                        <li><i class="fas fa-check"></i> Database Design & Integration</li>
+                        <li><i class="fas fa-check"></i> Deployment & Hosting</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning Solutions</h3>
+                    <p>Development and deployment of AI models tailored to your needs. From computer vision to natural language processing and generative AI applications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Deep Learning Models (CNN, RNN, LSTM)</li>
+                        <li><i class="fas fa-check"></i> Natural Language Processing</li>
+                        <li><i class="fas fa-check"></i> Generative AI Integration</li>
+                        <li><i class="fas fa-check"></i> Model Training & Deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform your data into actionable insights. Comprehensive data analysis, visualization, and reporting to drive informed business decisions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Data Processing & Cleaning</li>
+                        <li><i class="fas fa-check"></i> Statistical Analysis</li>
+                        <li><i class="fas fa-check"></i> Data Visualization</li>
+                        <li><i class="fas fa-check"></i> Insights & Recommendations</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Career Support & Mentorship</h3>
+                    <p>Guidance for aspiring developers to build their careers. From portfolio setup to GitHub management and technical interview preparation.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Portfolio Development</li>
+                        <li><i class="fas fa-check"></i> GitHub Project Management</li>
+                        <li><i class="fas fa-check"></i> Technical Interview Prep</li>
+                        <li><i class="fas fa-check"></i> Career Path Guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>My Portfolio</h2>
+                <p>A showcase of projects ranging from beginner to advanced level implementations</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="advanced" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-img">
+                        <i class="fas fa-project-diagram" style="font-size: 50px;"></i>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-action" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>AI-Powered E-commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with AI-based product recommendations and chatbot integration.</p>
+                        <span class="portfolio-tag">Advanced</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="intermediate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-img">
+                         <img src="assets/images/project1.png" alt="AI-Powered E-commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-action" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Interactive dashboard for business intelligence with real-time data visualization.</p>
+                        <span class="portfolio-tag">Intermediate</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="beginner" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-img">
+                        <img src="assets/images/project2.jpeg" alt="AI-Powered E-commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                       
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-action" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Personal Blog Website</h3>
+                        <p>Responsive blog website with content management system and user authentication.</p>
+                        <span class="portfolio-tag">Beginner</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="advanced" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-img">
+                        <i class="fas fa-language" style="font-size: 50px;"></i>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-action" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>NLP Text Analysis Tool</h3>
+                        <p>Natural Language Processing application for sentiment analysis and text classification.</p>
+                        <span class="portfolio-tag">Advanced</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="intermediate" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-img">
+                    <img src="assets/images/project3.jpeg" alt="AI-Powered E-commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-action" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Task Management App</h3>
+                        <p>Cross-platform task management application with cloud synchronization.</p>
+                        <span class="portfolio-tag">Intermediate</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="beginner" data-aos="fade-up" data-aos-delay="600">
+                    <div class="portfolio-img">
+                        <img src="assets/images/project4.jpeg" alt="AI-Powered E-commerce Platform" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-action" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-action" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>University Portal</h3>
+                        <p>Student portal for course registration and academic information.</p>
+                        <span class="portfolio-tag">Beginner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Testimonials</h2>
+                <p>What clients and colleagues say about working with me</p>
+            </div>
+            <div class="testimonial-slider" data-aos="fade-up">
+                <div class="testimonial-track">
+                    <div class="testimonial">
+                        <p class="testimonial-text">Sunny delivered an exceptional AI solution that transformed our business operations. His technical expertise and professionalism made the entire process smooth and efficient.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h4>John Doe</h4>
+                                <span>CEO, Tech Solutions Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">Working with Sunny on our web application was a great experience. He not only delivered a high-quality product but also provided valuable insights that improved the final outcome.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SJ</div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Project Manager, Innovate Co.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">As a mentee, I found Sunny's guidance invaluable. He helped me build my portfolio and prepare for technical interviews, which ultimately landed me my first developer job.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AR</div>
+                            <div class="author-info">
+                                <h4>Alex Rodriguez</h4>
+                                <span>Junior Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or need mentorship? Let's discuss how I can help you achieve your goals.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Collaborate!</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+                        Whether you need a full-stack solution, AI integration, or career guidance, I'm here to help.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>fahmidsunny59@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>01896476174</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <p>Md Fahmid Hasan Sunny</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Tell me about your project or what you need help with..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Sunny</h3>
+                    <p>
+                        Full Stack Developer specializing in AI & ML solutions, helping businesses and 
+                        individuals build innovative digital experiences.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-connect">
+                    <h4>Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 @fahm.codes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
