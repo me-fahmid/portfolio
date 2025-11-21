@@ -214,4 +214,70 @@
             alert('Resume download would start now. In a real implementation, this would download your PDF resume.');
             // In a real implementation, you would link to your actual resume PDF
             // window.location.href = 'path/to/your/resume.pdf';
+
         });
+// Project Details Modal Function
+function showProjectDetails(projectId) {
+    const projectData = {
+        'daily-planner': {
+            title: 'Your Daily Plan - Productivity App',
+            description: 'A feature-rich daily planner web application built from scratch to help users organize tasks and boost productivity. Features real-time calendar, interactive todo list, notes system, and theme switching.',
+            features: [
+                '📅 Live calendar & real-time digital watch',
+                '✅ Interactive todo list with check/uncheck functionality',
+                '📝 Notes management system with add/delete',
+                '🌙 Dark/Light mode toggle',
+                '💾 Local storage for data persistence',
+                '📱 Fully responsive design',
+                '🎨 Smooth CSS animations and transitions'
+            ],
+            technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage API', 'GitHub Pages'],
+            liveDemo: 'https://me-fahmid.github.io/todo-daily-planner/',
+            sourceCode: 'https://github.com/me-fahmid/todo-daily-planner',
+            status: 'Completed & Live'
+        }
+    };
+
+    const project = projectData[projectId];
+    if (project) {
+        // Create modal HTML
+        const modalHTML = `
+            <div class="project-modal" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+                <div class="modal-content" style="background: white; padding: 30px; border-radius: 15px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h2 style="margin: 0; color: #2c3e50;">${project.title}</h2>
+                        <button onclick="this.closest('.project-modal').remove()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">&times;</button>
+                    </div>
+                    
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">${project.description}</p>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">✨ Key Features</h4>
+                        <ul style="color: #666; line-height: 1.6;">
+                            ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;">🛠 Technologies Used</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            ${project.technologies.map(tech => `<span style="background: #e3f2fd; color: #1976d2; padding: 4px 12px; border-radius: 15px; font-size: 0.8em;">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; margin-top: 25px;">
+                        <a href="${project.liveDemo}" target="_blank" style="background: #F28F79; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="${project.sourceCode}" target="_blank" style="background: #2c3e50; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Add modal to body
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+    }
+}
